@@ -1,29 +1,29 @@
 class Solution {
     public long maximumTripletValue(int[] nums) {
-        int size = 0;
+        int i = 0;
         long max = 0L;
         if(nums.length == 3)
             {    
                 return (long)((nums[0]-nums[1]) > 0 ? (long)(nums[0]-nums[1]) * nums[2] : 0);
             }
-        while(size<nums.length-2)
+        while(i<nums.length-2)
         {
-            for(int K = size + 1 ; K < nums.length - 1; K++)
+            for(int j = i + 1 ; j < nums.length - 1; j++)
             {
-                if((nums[size]-nums[K])>0)
+                if((nums[i]-nums[j])>0)
                     {                   
-                        for(int a = K + 1; a < nums.length; a++)
+                        for(int K = j + 1; K < nums.length; K++)
                             {
-                               System.out.println((nums[size]-nums[K]) * nums[a]); 
-                                if( max < (long)(nums[size]-nums[K]) * nums[a])
+                                if( max < (long)(nums[i]-nums[j]) * nums[K])
                                     {
-                                        max = (long)(nums[size]-nums[K]) * nums[a];
+                                        max = (long)(nums[i]-nums[j]) * nums[K];
                                     }
                             }
                     }
             
-            }  size++;
+            }  i++;
         }
+        System.out.println(max);
         return max;
     }
 }
