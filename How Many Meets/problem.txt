@@ -1,0 +1,13 @@
+Geek and Geekina are running on a running track. They love meeting each other. Geek can complete a lap in A seconds and Geekina can complete in B seconds. Both start running at the same time and both can run at most c seconds. Find the number of times they can meet on the starting point after they have started running.
+
+Example:1
+A = 3 , B = 3, C = 9
+answer = 3
+A runs and stops at 3 , 6  and 9
+B runs and stops at 3 , 6 and  9 thus there meet at three  places 
+
+Example:2
+A = 1 , B = 3, C = 14
+answer = 4
+A runs and stops at 3 , 6, 9 and 12
+B runs and stops at at intervals of 1 i.e 1,2,3....14 and coinciding with all A starting points

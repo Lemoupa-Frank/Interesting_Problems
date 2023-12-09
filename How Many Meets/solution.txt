@@ -1,0 +1,10 @@
+This solution focuses on getting all possible i,j,k relevant combinations
+
+We will have three pointers a pointer for all i's , j's and K's
+the i pointer starts at the first element and lets the j pointer 
+traverse the array for any i - j > 0 if that is found then the K
+pointer starts at the jth + 1 position, value  (i - j)k  is 
+computed, only the K pointer moves to the end of the array to 
+keep comparing values, once at the end or if the i - j < 0 the J
+pointer is pushed forward the algorithm, and the cycle is repeated,
+the cycle ends when the i pointer is three positions to the end
