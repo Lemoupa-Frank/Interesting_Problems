@@ -1,0 +1,2 @@
+A pointer is placed at the end of the row R which moves only when another
+pointer C goes through all the columns of that row to determine the hitcells 
